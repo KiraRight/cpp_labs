@@ -1,0 +1,8 @@
+package hiswt;
+
+public class DrawingPaper extends Paper {
+	public DrawingPaper()
+	{
+		super();
+	}
+}

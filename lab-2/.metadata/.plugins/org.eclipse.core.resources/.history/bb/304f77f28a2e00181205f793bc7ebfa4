@@ -1,0 +1,7 @@
+package hiswt;
+
+public class OfficePaper extends Paper {
+	public OfficePaper()
+	{
+	}
+}

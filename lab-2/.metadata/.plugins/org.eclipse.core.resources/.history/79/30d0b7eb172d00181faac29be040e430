@@ -1,0 +1,26 @@
+package hiswt;
+
+public class Human {
+	private Paper paperInHumanArms;
+	private Printer printerForHuman;
+	public Human()
+	{
+		this.printerForHuman = new Printer();
+		this.paperInHumanArms = new Paper();
+	}
+	
+	public void PutPaper()
+	{
+		printerForHuman.setPaper(paperInHumanArms);
+	}
+	
+	public void Print(String whatWePrint)
+	{
+		if(whatWePrint == "text")
+			printerForHuman.PrintText();
+		else 
+			if(whatWePrint == "image")
+				printerForHuman.PrintImage();
+		this.paperInHumanArms = printerForHuman.gerPaper();
+	}
+}

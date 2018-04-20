@@ -1,0 +1,23 @@
+package hiswt;
+
+public class Printer {
+	private Paper paperInPrinter;
+	public Printer()
+	{
+		this.paperInPrinter = null;
+	}
+	public void PrintText()
+	{
+		
+	}
+	
+	public void PrintImage()
+	{
+		
+	}
+	
+	void setPaper(Paper paper)
+	{
+		this.paperInPrinter = paper;
+	}
+}

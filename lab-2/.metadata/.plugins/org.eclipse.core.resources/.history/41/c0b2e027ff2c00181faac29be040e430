@@ -1,0 +1,15 @@
+package hiswt;
+
+public class Human {
+	private Paper paperInHumanArms;
+	private Printer printerForHuman;
+	public void PutPaper()
+	{
+		printerForHuman.setPaper(paperInHumanArms);
+	}
+	
+	public void Print()
+	{
+		
+	}
+}

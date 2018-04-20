@@ -1,0 +1,32 @@
+package hiswt;
+
+public class Printer {
+	private Paper paperInPrinter;
+	public Printer()
+	{
+		this.paperInPrinter = null;
+	}
+	public void PrintText()
+	{
+		paperInPrinter = new OfficePaper();
+		String text = "Y-y-y-y-y-y-y-y-y-y y-y-y-y-y y-y-y-y, don't worry be happy";
+		paperInPrinter.SetText(text);
+	}
+	
+	public void PrintImage()
+	{
+		paperInPrinter = new DrawingPaper();
+		String image = "This is image. Imagine it. Belive in it";
+		paperInPrinter.SetText(image);
+	}
+	
+	void setPaper(Paper paper)
+	{
+		this.paperInPrinter = paper;
+	}
+	
+	Paper gerPaper()
+	{
+		return paperInPrinter;
+	}
+}

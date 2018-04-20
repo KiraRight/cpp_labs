@@ -1,0 +1,42 @@
+package hiswt;
+
+public class Human {
+	private Paper paperInHumanArms;
+	private Printer printerForHuman;
+	public Human()
+	{
+		this.printerForHuman = new Printer();
+		this.paperInHumanArms = new Paper();
+	}
+	
+	public void PickUp()
+	{
+		this.paperInHumanArms = printerForHuman.getPaper();
+	}
+	
+	public void PutPaper()
+	{
+		printerForHuman.setPaper(paperInHumanArms);
+	}
+	
+	public boolean Print(String whatWePrint)
+	{
+		if(whatWePrint.compareTo("текст")==0)
+			printerForHuman.PrintText();
+		else 
+			if(whatWePrint.compareTo("изображение")==0)
+				printerForHuman.PrintImage();
+			else return false;
+				
+		return true;
+	}
+	
+	public boolean CheckPaperInPrinter()
+	{
+		
+		if(printerForHuman.getPaper() != null)
+			return true;
+		else
+			return false;
+	}
+}
